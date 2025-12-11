@@ -13,7 +13,7 @@
 </div>
 
 ## 📣 Updates
-- **[2025.12.10]** 🔥 Release `inference code`, `config` and `checkpoints`!
+- **[2025.12.13]** 🔥 Release `inference code`, `config` and `pretrained weights`!
 
 ## ⚙️ Framework
 <img src="assets/overview.png" alt="Image 1" width="100%">
@@ -72,12 +72,12 @@ pretrained_weights
     └── unet_work.engine
 ```
 
-### 🎮 Inference (Offline)
+### 🎞️ Offline Inference
 ```
 python inference_offline.py
 ```
-### 💻 Inference (Online)
-#### Installation
+### 📸 Online Inference
+#### 📦 Setup Web UI
 ```
 # install Node.js 18+
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
@@ -87,13 +87,13 @@ cd webcam
 source start.sh
 ```
 
-#### TensorRT (Optional)
-Converting the model to TensorRT can significantly speed up inference (~ 2x). Building the engine may take about `20 minutes` depending on your device. Note that TensorRT optimizations may lead to slight variations or a small drop in output quality.
+#### 🏎️ Acceleration (Optional)
+Converting the model to TensorRT can significantly speed up inference (~ 2x ⚡️). Building the engine may take about `20 minutes` depending on your device. Note that TensorRT optimizations may lead to slight variations or a small drop in output quality.
 ```
 python torch2trt.py
 ```
 
-#### Run
+#### ▶️ Start Streaming
 ```
 python inference_online.py
 ```
@@ -104,7 +104,6 @@ If you find PersonaLive useful for your research, welcome to 🌟 this repo and 
 ```bibtex
 
 ``` -->
-
 
 ## ❤️ Acknowledgement
 This project is based on [Moore-AnimateAnyone](https://github.com/MooreThreads/Moore-AnimateAnyone), [X-NeMo](https://byteaigc.github.io/X-Portrait2/), [StreamDiffusion](https://github.com/cumulo-autumn/StreamDiffusion), [RAIN](https://pscgylotti.github.io/pages/RAIN/) and [LivePortrait](https://github.com/KlingTeam/LivePortrait), thanks to their invaluable contributions.
